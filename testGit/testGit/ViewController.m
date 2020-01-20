@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    label.text = @"Git CI";
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+    
 }
 
 

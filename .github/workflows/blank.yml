@@ -18,8 +18,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     #前往主要目录下
-    - name: cd testGit
-      run: cd testGit
+    - name: to project dir
+      run: cd testGi
     #安装pod
     #- name: install pod
      # run: pod install

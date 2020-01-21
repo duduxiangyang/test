@@ -23,3 +23,5 @@ jobs:
     #安装pod
     - name: install pod
       run: pod install
+    - name: archive
+      run: fastlane archive_ipa

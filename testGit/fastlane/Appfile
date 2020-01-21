@@ -1,5 +1,5 @@
 # app_identifier("com.guoshi.testGit") # The bundle identifier of your app
-# apple_id("iOS@55rd.com") # Your Apple email address
+# apple_id("ios@55rd.com") # Your Apple email address
 
 
 # For more information about the Appfile, see:

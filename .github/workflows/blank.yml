@@ -8,9 +8,9 @@ on:
 jobs:
   build:
     runs-on: macos-latest
-    #strategy:
-     # matrix:
-       # xcode: ['/Applications/Xcode_11.2.1.app/Contents/Developer']
+    strategy:
+      matrix:
+        xcode: ['/Applications/Xcode_11.2.1.app/Contents/Developer']
     
     
     steps:
@@ -23,3 +23,5 @@ jobs:
           cd testGit
           ls
           bundle exec fastlane archive_ipa
+      env:
+        DEVELOPER_DIR: ${{ matrix.xcode }}

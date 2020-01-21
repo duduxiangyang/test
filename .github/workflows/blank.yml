@@ -22,5 +22,4 @@ jobs:
       run: |
           cd testGit
           ls
-          pod install
-          fastlane archive_ipa
+          bundle exec fastlane archive_ipa

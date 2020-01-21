@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: macos-latest
     #strategy:
      # matrix:
        # xcode: ['/Applications/Xcode_11.2.1.app/Contents/Developer']
@@ -18,10 +18,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     #前往主要目录下
-    - name: cd testGit
-      run: cd testGit
-    #安装pod
-    #- name: install pod
-     # run: pod install
-    - name: fastlane 
-      run: fastlane archive_ipa
+    - name: to project dir
+      run: |
+          cd testGit
+          ls
+          pod install
+          fastlane archive_ipa

@@ -26,7 +26,8 @@ platform :ios do
      scheme:"testGit",
      export_method:"ad-hoc",
      output_directory:"./Archived/",
-     output_name:"testGit"
+     output_name:"testGit",
+     export_xcargs:"-allowProvisioningUpdates"
    )   
   end
 end

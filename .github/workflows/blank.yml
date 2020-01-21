@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v1
     #前往主要目录下
     - name: to project dir
-      uses: ./testGit
+      uses: testGit
     #安装pod
     #- name: install pod
      # run: pod install

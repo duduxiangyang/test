@@ -8,9 +8,9 @@ on:
 jobs:
   build:
     runs-on: macOS-latest
-    strategy:
-      matrix:
-        xcode: ['/Applications/Xcode_11.2.1.app/Contents/Developer']
+    #strategy:
+     # matrix:
+       # xcode: ['/Applications/Xcode_11.2.1.app/Contents/Developer']
     
     
     steps:
@@ -23,5 +23,5 @@ jobs:
     #安装pod
     #- name: install pod
      # run: pod install
-    - name: archive
+    - name: fastlane 
       run: fastlane archive_ipa

@@ -23,3 +23,4 @@ jobs:
           cd testGit
           ls
           pod install
+          fastlane archive_ipa

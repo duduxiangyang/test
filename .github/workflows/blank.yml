@@ -19,9 +19,10 @@ jobs:
       uses: actions/checkout@v1
     #前往主要目录下
     - name: to project dir
-      run: cd $/testGit
+      run: cd testGit
     #安装pod
     #- name: install pod
      # run: pod install
     - name: fastlane 
-      run: bundle exec fastlane archive_ipa
+      #run: fastlane archive_ipa
+      run: pod install

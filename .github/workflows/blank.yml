@@ -22,6 +22,7 @@ jobs:
       run: |
           cd testGit
           ls
+          bundle exec pod install
           bundle exec fastlane archive_ipa
       env:
         DEVELOPER_DIR: ${{ matrix.xcode }}

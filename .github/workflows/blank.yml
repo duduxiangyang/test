@@ -8,12 +8,20 @@ on:
 jobs:
   build:
     runs-on: macOS-latest
+    #strategy:
+     # matrix:
+       # xcode: ['/Applications/Xcode_11.2.1.app/Contents/Developer']
+    
     
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    #checkout源码
+    - name: Checkout
+      uses: actions/checkout@v1
+    #前往主要目录下
+    - name: cd testGit
+      run: cd testGit
+    #安装pod
+    #- name: install pod
+     # run: pod install
+    - name: fastlane 
+      run: fastlane archive_ipa

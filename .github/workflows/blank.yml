@@ -24,4 +24,4 @@ jobs:
     #- name: install pod
      # run: pod install
     - name: fastlane 
-      run: fastlane archive_ipa
+      run: bundle exec fastlane archive_ipa
